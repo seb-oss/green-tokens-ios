@@ -3,7 +3,7 @@
 //
 
 // Do not edit directly
-// Generated on Mon, 11 Nov 2024 12:44:37 GMT
+// Generated on Wed, 20 Nov 2024 17:31:41 GMT
 
 
 import PackageDescription
