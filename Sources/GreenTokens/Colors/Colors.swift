@@ -3,7 +3,7 @@
 //
 
 // Do not edit directly
-// Generated on Wed, 20 Nov 2024 17:31:41 GMT
+// Generated on Thu, 20 Mar 2025 08:05:02 GMT
 
 import SwiftUI
 
@@ -56,7 +56,7 @@ public class Colors {
                 public static let copper02 = Color(uiColor: UIColors.Level.L2.Content.copper02)
                 public static let green01 = Color(uiColor: UIColors.Level.L2.Content.green01)
                 public static let green02 = Color(uiColor: UIColors.Level.L2.Content.green02)
-                public static let infomation = Color(uiColor: UIColors.Level.L2.Content.infomation)
+                public static let information = Color(uiColor: UIColors.Level.L2.Content.information)
                 public static let negative = Color(uiColor: UIColors.Level.L2.Content.negative)
                 public static let notice = Color(uiColor: UIColors.Level.L2.Content.notice)
                 public static let positive = Color(uiColor: UIColors.Level.L2.Content.positive)

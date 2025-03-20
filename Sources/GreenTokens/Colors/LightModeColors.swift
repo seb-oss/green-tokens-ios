@@ -3,7 +3,7 @@
 //
 
 // Do not edit directly
-// Generated on Wed, 20 Nov 2024 17:31:41 GMT
+// Generated on Thu, 20 Mar 2025 08:05:02 GMT
 
 import UIKit
 
@@ -56,7 +56,7 @@ public class LightModeColors {
                 public static let copper02 = UIColor(red: 1.000, green: 1.000, blue: 1.000, alpha: 1)
                 public static let green01 = UIColor(red: 0.106, green: 0.106, blue: 0.106, alpha: 1)
                 public static let green02 = UIColor(red: 1.000, green: 1.000, blue: 1.000, alpha: 1)
-                public static let infomation = UIColor(red: 0.106, green: 0.106, blue: 0.106, alpha: 1)
+                public static let information = UIColor(red: 0.106, green: 0.106, blue: 0.106, alpha: 1)
                 public static let negative = UIColor(red: 0.651, green: 0.243, blue: 0.165, alpha: 1)
                 public static let notice = UIColor(red: 0.000, green: 0.373, blue: 0.675, alpha: 1)
                 public static let positive = UIColor(red: 0.208, green: 0.447, blue: 0.239, alpha: 1)

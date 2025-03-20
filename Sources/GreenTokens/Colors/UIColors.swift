@@ -3,7 +3,7 @@
 //
 
 // Do not edit directly
-// Generated on Wed, 20 Nov 2024 17:31:41 GMT
+// Generated on Thu, 20 Mar 2025 08:05:02 GMT
 
 import UIKit
 
@@ -301,11 +301,11 @@ public class UIColors {
                     }
                 }
 
-                public static var infomation: UIColor {
+                public static var information: UIColor {
                     return UIColor { (traits) -> UIColor in
                         return traits.userInterfaceStyle == .dark ?
-                           DarkModeColors.Level.L2.Content.infomation :
-                           LightModeColors.Level.L2.Content.infomation
+                           DarkModeColors.Level.L2.Content.information :
+                           LightModeColors.Level.L2.Content.information
                     }
                 }
 

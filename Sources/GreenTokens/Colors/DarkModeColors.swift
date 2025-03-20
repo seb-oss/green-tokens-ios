@@ -3,7 +3,7 @@
 //
 
 // Do not edit directly
-// Generated on Wed, 20 Nov 2024 17:31:41 GMT
+// Generated on Thu, 20 Mar 2025 08:05:02 GMT
 
 import UIKit
 
@@ -56,7 +56,7 @@ public class DarkModeColors {
                 public static let copper02 = #ffffff
                 public static let green01 = #1b1b1b
                 public static let green02 = #ffffff
-                public static let infomation = #d7d7d7
+                public static let information = #d7d7d7
                 public static let negative = #ee8375
                 public static let notice = #78a3d5
                 public static let positive = #54b561
