@@ -3,7 +3,7 @@
 //
 
 // Do not edit directly
-// Generated on Thu, 20 Mar 2025 08:05:02 GMT
+// Generated on Fri, 04 Apr 2025 08:10:14 GMT
 
 import UIKit
 
@@ -22,6 +22,7 @@ public class Dimensions {
             public static let displayS = 32
             public static let displayXl = 64
             public static let heading2xl = 14
+            public static let heading2xs = 14
             public static let headingL = 28
             public static let headingM = 24
             public static let headingS = 20
