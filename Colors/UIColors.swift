@@ -522,6 +522,14 @@ public struct UIColors {
                     }
                 }
 
+                public static var neutral05: UIColor {
+                    return UIColor { (traits) -> UIColor in
+                        return traits.userInterfaceStyle == .dark ?
+                           DarkModeColors.Sys.Color.L3.neutral05 :
+                           LightModeColors.Sys.Color.L3.neutral05
+                    }
+                }
+
                 public static var notice01: UIColor {
                     return UIColor { (traits) -> UIColor in
                         return traits.userInterfaceStyle == .dark ?

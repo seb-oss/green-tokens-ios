@@ -81,6 +81,7 @@ public struct Colors {
                 public static let neutral02 = Color(uiColor: UIColors.Sys.Color.L3.neutral02)
                 public static let neutral03 = Color(uiColor: UIColors.Sys.Color.L3.neutral03)
                 public static let neutral04 = Color(uiColor: UIColors.Sys.Color.L3.neutral04)
+                public static let neutral05 = Color(uiColor: UIColors.Sys.Color.L3.neutral05)
                 public static let notice01 = Color(uiColor: UIColors.Sys.Color.L3.notice01)
                 public static let notice02 = Color(uiColor: UIColors.Sys.Color.L3.notice02)
                 public static let notice03 = Color(uiColor: UIColors.Sys.Color.L3.notice03)

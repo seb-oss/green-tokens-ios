@@ -81,6 +81,7 @@ public struct DarkModeColors {
                 public static let neutral02 = UIColor(red:0.157, green:0.165, blue:0.161, alpha:1)
                 public static let neutral03 = UIColor(red:0.231, green:0.247, blue:0.243, alpha:1)
                 public static let neutral04 = UIColor(red:0.231, green:0.247, blue:0.243, alpha:1)
+                public static let neutral05 = UIColor(red:0.000, green:0.220, blue:0.141, alpha:1)
                 public static let notice01 = UIColor(red:0.000, green:0.373, blue:0.702, alpha:1)
                 public static let notice02 = UIColor(red:0.000, green:0.267, blue:0.502, alpha:1)
                 public static let notice03 = UIColor(red:0.000, green:0.212, blue:0.400, alpha:1)
