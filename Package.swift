@@ -9,22 +9,48 @@
 import PackageDescription
 
 let package = Package(
-    name: "GdsTokens",
+    name: "GdsKit",
     platforms: [.iOS(.v15)],
     products: [
         .library(
-            name: "GdsTokens",
-            targets: ["GdsTokens"]
+            name: "GdsKit",
+            targets: [
+                "GdsKit",
+                "GdsColours",
+                "GdsTypography"
+            ]
         )
     ],
     dependencies: [],
     targets: [
         .target(
-            name: "GdsTokens",
-            dependencies: [],
-            resources: [
-                undefined
+            name: "GdsKit",
+            dependencies: [
+                "GdsColours",
+                "GdsTypography",
+                "GdsDimension"
             ]
+        ),
+        .target(
+            name: "GdsColours",
+            dependencies: [],
+            path: "Sources/GdsColours",
+            resources: [
+                .process("Resources")
+            ]
+        ),
+        .target(
+            name: "GdsTypography",
+            dependencies: [],
+            path: "Sources/GdsTypography",
+            resources: [
+                .process("Resources")
+            ]
+        ),
+        .target(
+            name: "GdsDimension",
+            dependencies: [],
+            path: "Sources/GdsDimension"
         )
     ]
 )
