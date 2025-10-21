@@ -1,7 +1,7 @@
 import UIKit
 
 extension Typography {
-    static func registerFonts() {
+    public static func registerFonts() {
         for weight in Weight.allCases {
             Typography.registerFont(named: weight.fontName)
         }
