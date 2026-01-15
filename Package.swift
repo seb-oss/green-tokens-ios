@@ -51,6 +51,12 @@ let package = Package(
             name: "GdsDimension",
             dependencies: [],
             path: "Sources/GdsDimension"
+        ),
+        .executableTarget(
+            name: "ColorGenerator",
+            dependencies: [],
+            path: "Sources/ColorGenerator",
+            exclude: ["Fixtures", "README.md"]
         )
     ]
 )
