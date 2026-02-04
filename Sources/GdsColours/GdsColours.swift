@@ -57,6 +57,7 @@ public extension UIColor {
     static var l2Negative01: UIColor { gdsColor(named: "l2Negative01") }
     static var l2Neutral01: UIColor { gdsColor(named: "l2Neutral01") }
     static var l2Neutral02: UIColor { gdsColor(named: "l2Neutral02") }
+    static var l2NeutralLoud: UIColor { gdsColor(named: "l2NeutralLoud") }
     static var l2Notice01: UIColor { gdsColor(named: "l2Notice01") }
     static var l2Positive01: UIColor { gdsColor(named: "l2Positive01") }
     static var l2Warning01: UIColor { gdsColor(named: "l2Warning01") }
@@ -76,15 +77,19 @@ public extension UIColor {
     static var l3Negative03: UIColor { gdsColor(named: "l3Negative03") }
     static var l3Neutral01: UIColor { gdsColor(named: "l3Neutral01") }
     static var l3Neutral02: UIColor { gdsColor(named: "l3Neutral02") }
+    static var l3Neutral03: UIColor { gdsColor(named: "l3Neutral03") }
     static var l3Neutral04: UIColor { gdsColor(named: "l3Neutral04") }
     static var l3Neutral05: UIColor { gdsColor(named: "l3Neutral05") }
     static var l3NeutralStrong: UIColor { gdsColor(named: "l3NeutralStrong") }
+    static var l3NeutralTone: UIColor { gdsColor(named: "l3NeutralTone") }
     static var l3Notice01: UIColor { gdsColor(named: "l3Notice01") }
     static var l3Notice02: UIColor { gdsColor(named: "l3Notice02") }
     static var l3Notice03: UIColor { gdsColor(named: "l3Notice03") }
+    static var l3Overlay: UIColor { gdsColor(named: "l3Overlay") }
     static var l3Positive01: UIColor { gdsColor(named: "l3Positive01") }
     static var l3Positive02: UIColor { gdsColor(named: "l3Positive02") }
     static var l3Positive03: UIColor { gdsColor(named: "l3Positive03") }
+    static var l3Positive04: UIColor { gdsColor(named: "l3Positive04") }
     static var l3Warning01: UIColor { gdsColor(named: "l3Warning01") }
     static var l3Warning02: UIColor { gdsColor(named: "l3Warning02") }
     static var l3Warning03: UIColor { gdsColor(named: "l3Warning03") }
@@ -188,6 +193,7 @@ public extension Color {
     static var l2Negative01: Color { gdsColor("l2Negative01") }
     static var l2Neutral01: Color { gdsColor("l2Neutral01") }
     static var l2Neutral02: Color { gdsColor("l2Neutral02") }
+    static var l2NeutralLoud: Color { gdsColor("l2NeutralLoud") }
     static var l2Notice01: Color { gdsColor("l2Notice01") }
     static var l2Positive01: Color { gdsColor("l2Positive01") }
     static var l2Warning01: Color { gdsColor("l2Warning01") }
@@ -207,15 +213,19 @@ public extension Color {
     static var l3Negative03: Color { gdsColor("l3Negative03") }
     static var l3Neutral01: Color { gdsColor("l3Neutral01") }
     static var l3Neutral02: Color { gdsColor("l3Neutral02") }
+    static var l3Neutral03: Color { gdsColor("l3Neutral03") }
     static var l3Neutral04: Color { gdsColor("l3Neutral04") }
     static var l3Neutral05: Color { gdsColor("l3Neutral05") }
     static var l3NeutralStrong: Color { gdsColor("l3NeutralStrong") }
+    static var l3NeutralTone: Color { gdsColor("l3NeutralTone") }
     static var l3Notice01: Color { gdsColor("l3Notice01") }
     static var l3Notice02: Color { gdsColor("l3Notice02") }
     static var l3Notice03: Color { gdsColor("l3Notice03") }
+    static var l3Overlay: Color { gdsColor("l3Overlay") }
     static var l3Positive01: Color { gdsColor("l3Positive01") }
     static var l3Positive02: Color { gdsColor("l3Positive02") }
     static var l3Positive03: Color { gdsColor("l3Positive03") }
+    static var l3Positive04: Color { gdsColor("l3Positive04") }
     static var l3Warning01: Color { gdsColor("l3Warning01") }
     static var l3Warning02: Color { gdsColor("l3Warning02") }
     static var l3Warning03: Color { gdsColor("l3Warning03") }
