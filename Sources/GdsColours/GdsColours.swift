@@ -13,7 +13,6 @@ public extension UIColor {
     static var borderInformation02: UIColor { gdsColor(named: "borderInformation02") }
     static var borderInteractive: UIColor { gdsColor(named: "borderInteractive") }
     static var borderInverse: UIColor { gdsColor(named: "borderInverse") }
-    static var borderIosSeparator: UIColor { gdsColor(named: "borderIosSeparator") }
     static var borderNegative01: UIColor { gdsColor(named: "borderNegative01") }
     static var borderNegative02: UIColor { gdsColor(named: "borderNegative02") }
     static var borderNotice01: UIColor { gdsColor(named: "borderNotice01") }
@@ -145,7 +144,6 @@ public extension Color {
     static var borderInformation02: Color { gdsColor("borderInformation02") }
     static var borderInteractive: Color { gdsColor("borderInteractive") }
     static var borderInverse: Color { gdsColor("borderInverse") }
-    static var borderIosSeparator: Color { gdsColor("borderIosSeparator") }
     static var borderNegative01: Color { gdsColor("borderNegative01") }
     static var borderNegative02: Color { gdsColor("borderNegative02") }
     static var borderNotice01: Color { gdsColor("borderNotice01") }
