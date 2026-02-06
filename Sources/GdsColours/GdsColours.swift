@@ -135,7 +135,7 @@ public extension UIColor {
     static var stateWarning05: UIColor { gdsColor(named: "stateWarning05") }
     static var stateWarning06: UIColor { gdsColor(named: "stateWarning06") }
 
-    private static func gdsColor(named name: String) -> UIColor {
+    static func gdsColor(named name: String) -> UIColor {
         guard let color = UIColor(named: name, in: .module, compatibleWith: nil) else {
             assertionFailure("Missing color asset 'name' in GdsColours resources")
             return .clear
@@ -271,7 +271,7 @@ public extension Color {
     static var stateWarning05: Color { gdsColor("stateWarning05") }
     static var stateWarning06: Color { gdsColor("stateWarning06") }
 
-    private static func gdsColor(_ name: String) -> Color {
+    static func gdsColor(_ name: String) -> Color {
         Color(name, bundle: .module)
     }
 }
