@@ -1,15 +1,7 @@
 import SwiftUI
 
-struct UserInferfaceLevel: EnvironmentKey {
-    static var defaultValue: UIUserInterfaceLevel {
-        UITraitCollection.current.userInterfaceLevel
-    }
-}
-
-extension EnvironmentValues {
-    var userInterfaceLevel: UIUserInterfaceLevel {
-        get { self[UserInferfaceLevel.self] }
-    }
+public extension EnvironmentValues {
+    @Entry private(set) var userInterfaceLevel: UIUserInterfaceLevel = UITraitCollection.current.userInterfaceLevel
 }
 
 public extension UIUserInterfaceLevel {
