@@ -1,6 +1,6 @@
 import SwiftUI
 
-public enum Level: String {
+public enum Level: String, Sendable {
     case level1 = "l1"
     case level2 = "l2"
     case level3 = "l3"
