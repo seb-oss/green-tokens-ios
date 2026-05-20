@@ -5,15 +5,15 @@
       "appearances": [
         {
           "appearance": "luminosity",
-          "value": "dark"
+          "value": "light"
         }
       ],
       "color": {
         "color-space": "srgb",
         "components": {
-          "red": "0.098",
-          "green": "0.102",
-          "blue": "0.102",
+          "red": "0.039",
+          "green": "0.043",
+          "blue": "0.043",
           "alpha": "1.000"
         }
       }
@@ -23,15 +23,15 @@
       "appearances": [
         {
           "appearance": "luminosity",
-          "value": "light"
+          "value": "dark"
         }
       ],
       "color": {
         "color-space": "srgb",
         "components": {
-          "red": "1.000",
-          "green": "1.000",
-          "blue": "1.000",
+          "red": "0.192",
+          "green": "0.208",
+          "blue": "0.200",
           "alpha": "1.000"
         }
       }
