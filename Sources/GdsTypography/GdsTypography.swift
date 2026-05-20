@@ -2,141 +2,56 @@
 import SwiftUI
 import UIKit
 
-public enum Typography {
-   case headingXl
-   case headingL
-   case headingM
-   case headingS
-   case headingXs
-   case heading2xs
-   case detailBookM
-   case detailBookS
-   case detailBookXs
-   case detailRegularM
-   case detailRegularS
-   case detailRegularXs
-   case bodyBookL
-   case bodyBookM
-   case bodyBookS
-   case bodyRegularL
-   case bodyRegularM
-   case bodyRegularS
-   case bodyItalicL
-   case bodyItalicM
-   case bodyItalicS
-   case display2xl
-   case displayXl
-   case displayL
-   case displayM
-   case displayS
-   case preamble2xl
-   case preambleXl
-   case preambleL
-   case preambleM
-   case preambleS
-   case preambleXs
-   case detailBook2xs
-   case detailRegular2xs
-   case bodyMediumL
-   case bodyMediumM
-   case bodyMediumS
+public struct Typography: Sendable {
+    public let size: CGFloat
+    public let textStyle: Font.TextStyle
+    public let weight: Typography.Weight
+
+    package init(size: CGFloat, textStyle: Font.TextStyle, weight: Typography.Weight) {
+        self.size = size
+        self.textStyle = textStyle
+        self.weight = weight
+    }
 }
 
-extension Typography {
-    var size: CGFloat {
-        switch self {
-            case .headingXl: 34
-            case .headingL: 28
-            case .headingM: 24
-            case .headingS: 20
-            case .headingXs: 16
-            case .heading2xs: 14
-            case .detailBookM: 17
-            case .detailBookS: 15
-            case .detailBookXs: 12
-            case .detailRegularM: 17
-            case .detailRegularS: 15
-            case .detailRegularXs: 12
-            case .bodyBookL: 20
-            case .bodyBookM: 17
-            case .bodyBookS: 13
-            case .bodyRegularL: 20
-            case .bodyRegularM: 17
-            case .bodyRegularS: 14
-            case .bodyItalicL: 20
-            case .bodyItalicM: 17
-            case .bodyItalicS: 13
-            case .display2xl: 82
-            case .displayXl: 64
-            case .displayL: 48
-            case .displayM: 36
-            case .displayS: 32
-            case .preamble2xl: 32
-            case .preambleXl: 28
-            case .preambleL: 24
-            case .preambleM: 20
-            case .preambleS: 18
-            case .preambleXs: 16
-            case .detailBook2xs: 12
-            case .detailRegular2xs: 11
-            case .bodyMediumL: 20
-            case .bodyMediumM: 17
-            case .bodyMediumS: 13
-        }
-    }
-
-    var textStyle: Font.TextStyle {
-        switch self {
-            case .headingXl: .largeTitle
-            case .headingL: .title
-            case .headingM: .title2
-            case .headingS: .title3
-            case .headingXs: .headline
-            case .heading2xs: .headline
-            case .detailBookM: .headline
-            case .detailBookS: .subheadline
-            case .detailBookXs: .caption
-            case .detailRegularM: .headline
-            case .detailRegularS: .subheadline
-            case .detailRegularXs: .caption
-            case .bodyBookL: .body
-            case .bodyBookM: .body
-            case .bodyBookS: .footnote
-            case .bodyRegularL: .body
-            case .bodyRegularM: .body
-            case .bodyRegularS: .footnote
-            case .bodyItalicL: .body
-            case .bodyItalicM: .body
-            case .bodyItalicS: .footnote
-            case .display2xl: .footnote
-            case .displayXl: .largeTitle
-            case .displayL: .largeTitle
-            case .displayM: .largeTitle
-            case .displayS: .largeTitle
-            case .preamble2xl: .title
-            case .preambleXl: .title
-            case .preambleL: .title2
-            case .preambleM: .title3
-            case .preambleS: .headline
-            case .preambleXs: .subheadline
-            case .detailBook2xs: .caption2
-            case .detailRegular2xs: .caption2
-            case .bodyMediumL: .body
-            case .bodyMediumM: .body
-            case .bodyMediumS: .footnote
-        }
-    }
-
-  var weight: Typography.Weight {
-    switch self {
-       case .bodyMediumL, .bodyMediumM, .bodyMediumS:
-            return .medium
-       case .headingXl, .headingL, .headingM, .headingS, .headingXs, .heading2xs, .detailBookM, .detailBookS, .detailBookXs, .bodyBookL, .bodyBookM, .bodyBookS, .display2xl, .displayXl, .displayL, .displayM, .displayS, .preamble2xl, .preambleXl, .preambleL, .preambleM, .preambleS, .preambleXs, .detailBook2xs:
-            return .book
-       case .detailRegularM, .detailRegularS, .detailRegularXs, .bodyRegularL, .bodyRegularM, .bodyRegularS, .bodyItalicL, .bodyItalicM, .bodyItalicS, .detailRegular2xs:
-            return .regular
-    }
-  }
+public extension Typography {
+    static let displayL = Typography(size: 64, textStyle: .largeTitle, weight: .book)
+    static let displayM = Typography(size: 48, textStyle: .largeTitle, weight: .book)
+    static let displayS = Typography(size: 36, textStyle: .largeTitle, weight: .book)
+    static let headingXl = Typography(size: 32, textStyle: .largeTitle, weight: .book)
+    static let headingL = Typography(size: 28, textStyle: .title, weight: .book)
+    static let headingM = Typography(size: 24, textStyle: .title2, weight: .book)
+    static let headingS = Typography(size: 20, textStyle: .title3, weight: .book)
+    static let headingXs = Typography(size: 16, textStyle: .headline, weight: .book)
+    static let preambleXl = Typography(size: 28, textStyle: .title, weight: .book)
+    static let preambleL = Typography(size: 24, textStyle: .title2, weight: .book)
+    static let preambleM = Typography(size: 20, textStyle: .title3, weight: .book)
+    static let preambleS = Typography(size: 18, textStyle: .headline, weight: .book)
+    static let detailLRegular = Typography(size: 18, textStyle: .title3, weight: .regular)
+    static let detailLBook = Typography(size: 18, textStyle: .title3, weight: .book)
+    static let detailLMedium = Typography(size: 18, textStyle: .title3, weight: .medium)
+    static let detailMRegular = Typography(size: 16, textStyle: .headline, weight: .regular)
+    static let detailMBook = Typography(size: 16, textStyle: .headline, weight: .book)
+    static let detailMMedium = Typography(size: 16, textStyle: .headline, weight: .medium)
+    static let detailSRegular = Typography(size: 14, textStyle: .subheadline, weight: .regular)
+    static let detailSBook = Typography(size: 14, textStyle: .subheadline, weight: .book)
+    static let detailSMedium = Typography(size: 14, textStyle: .subheadline, weight: .medium)
+    static let detailXsRegular = Typography(size: 12, textStyle: .caption, weight: .regular)
+    static let detailXsBook = Typography(size: 12, textStyle: .caption, weight: .book)
+    static let detailXsMedium = Typography(size: 12, textStyle: .caption, weight: .medium)
+    static let detail2xsRegular = Typography(size: 10, textStyle: .caption2, weight: .regular)
+    static let detail2xsBook = Typography(size: 10, textStyle: .caption2, weight: .book)
+    static let detail2xsMedium = Typography(size: 10, textStyle: .caption2, weight: .medium)
+    static let bodyLRegular = Typography(size: 18, textStyle: .body, weight: .regular)
+    static let bodyLRegularItalic = Typography(size: 18, textStyle: .body, weight: .regular)
+    static let bodyLBook = Typography(size: 18, textStyle: .body, weight: .book)
+    static let bodyLMedium = Typography(size: 18, textStyle: .body, weight: .medium)
+    static let bodyMRegular = Typography(size: 16, textStyle: .body, weight: .regular)
+    static let bodyMRegularItalic = Typography(size: 16, textStyle: .body, weight: .regular)
+    static let bodyMBook = Typography(size: 16, textStyle: .body, weight: .book)
+    static let bodyMMedium = Typography(size: 16, textStyle: .body, weight: .medium)
+    static let bodySRegular = Typography(size: 14, textStyle: .footnote, weight: .regular)
+    static let bodySRegularItalic = Typography(size: 14, textStyle: .footnote, weight: .regular)
+    static let bodySBook = Typography(size: 14, textStyle: .footnote, weight: .book)
+    static let bodySMedium = Typography(size: 14, textStyle: .footnote, weight: .medium)
 }
-
-extension Typography: CaseIterable {}

@@ -1,26 +1,46 @@
 import UIKit
+import os.log
 
 extension Typography {
-    public static func registerFonts() {
-        for weight in Weight.allCases {
-            Typography.registerFont(named: weight.fontName)
+    private enum Error: LocalizedError {
+        case fontRegistrationFailed(name: String)
+        
+        var errorDescription: String? {
+            switch self {
+            case .fontRegistrationFailed(let name):
+                "Failed to register font \(name)"
+            }
         }
     }
-    
-    private static func registerFont(named name: String) {
-        guard
-         let asset = NSDataAsset(name: "Fonts/\(name)", bundle: Bundle.module),
-         let provider = CGDataProvider(data: asset.data as NSData),
-         let font = CGFont(provider),
-         CTFontManagerRegisterGraphicsFont(font, nil)
-         else {
-            let message = "Failed to register font \(name)"
-            assertionFailure(message)
-            print(message)
-            return
+
+    static var isRegistered: Bool = false
+
+    static func registerFonts() {
+        do {
+            for weight in Weight.allCases {
+                try Typography.registerFont(named: weight.fontName)
+            }
+            isRegistered = true
+            logger.debug("Registered all GDS fonts successfully.")
+        } catch {
+            logger.error("\(error.localizedDescription)")
         }
-     }
+    }
+
+    private static func registerFont(named name: String) throws(Error) {
+        guard
+            let asset = NSDataAsset(name: "\(name)", bundle: Bundle.module),
+            let provider = CGDataProvider(data: asset.data as NSData),
+            let font = CGFont(provider),
+            CTFontManagerRegisterGraphicsFont(font, nil)
+        else {
+            logger.error("Failed to register font \(name)")
+            throw .fontRegistrationFailed(name: name)
+        }
+    }
 }
+
+private let logger = Logger(subsystem: "se.seb.gdskit", category: "Typography")
 
 #if DEBUG
 import SwiftUI
