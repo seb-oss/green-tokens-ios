@@ -6,4 +6,3 @@
 
 @_exported import GdsColours
 @_exported import GdsTypography
-@_exported import GdsDimension
