@@ -131,10 +131,6 @@ public struct GdsColor: RawRepresentable, Sendable {
 }
 
 public extension Color {
-    static func gds(_ color: GdsColor) -> Color {
-        Color(color.rawValue, bundle: .module)
-    }
-
     @available(*, deprecated, message: "Use .gds(.l1Neutral01) instead")
     static var l1Neutral01: Color { .gds(.l1Neutral01) }
     @available(*, deprecated, message: "Use .gds(.l1Neutral02) instead")
@@ -366,15 +362,6 @@ public extension Color {
 }
 
 public extension UIColor {
-    static func gds(_ color: GdsColor) -> UIColor {
-        guard let validatedColor = UIColor(named: color.rawValue, in: .module, compatibleWith: nil) else {
-            assertionFailure("Missing color asset '\(color.rawValue)' in GdsColours resources")
-            return .clear
-        }
-        
-        return validatedColor
-    }
-
     @available(*, deprecated, message: "Use .gds(.l1Neutral01) instead")
     static var l1Neutral01: UIColor { .gds(.l1Neutral01) }
     @available(*, deprecated, message: "Use .gds(.l1Neutral02) instead")
