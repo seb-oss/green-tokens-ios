@@ -5,7 +5,7 @@
       "appearances": [
         {
           "appearance": "luminosity",
-          "value": "dark"
+          "value": "light"
         }
       ],
       "color": {
@@ -23,7 +23,7 @@
       "appearances": [
         {
           "appearance": "luminosity",
-          "value": "light"
+          "value": "dark"
         }
       ],
       "color": {

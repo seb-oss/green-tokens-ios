@@ -17,6 +17,7 @@ let package = Package(
             targets: [
                 "GdsKit",
                 "GdsColours",
+                "GdsDimensions",
                 "GdsTypography"
             ]
         )
@@ -25,11 +26,7 @@ let package = Package(
     targets: [
         .target(
             name: "GdsKit",
-            dependencies: [
-                "GdsColours",
-                "GdsTypography",
-                "GdsDimension"
-            ]
+            dependencies: ["GdsColours", "GdsTypography", "GdsDimensions"]
         ),
         .target(
             name: "GdsColours",
@@ -40,17 +37,18 @@ let package = Package(
             ]
         ),
         .target(
-            name: "GdsTypography",
+            name: "GdsDimensions",
             dependencies: [],
+            path: "Sources/GdsDimensions",
+            resources: []
+        ),
+        .target(
+            name: "GdsTypography",
+            dependencies: ["GdsDimensions"],
             path: "Sources/GdsTypography",
             resources: [
                 .process("Resources")
             ]
-        ),
-        .target(
-            name: "GdsDimension",
-            dependencies: [],
-            path: "Sources/GdsDimension"
         )
     ]
 )
