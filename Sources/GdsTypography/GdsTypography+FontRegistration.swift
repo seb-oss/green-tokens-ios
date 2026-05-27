@@ -15,7 +15,7 @@ extension Typography {
 
     static var isRegistered: Bool = false
 
-    static func registerFonts() {
+    public static func registerFonts() {
         do {
             for weight in Weight.allCases {
                 try Typography.registerFont(named: weight.fontName)
