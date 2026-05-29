@@ -24,7 +24,7 @@ extension Typography {
             case .lightItalic: "SEBSansSerif-LightItalic"
             case .medium: "SEBSansSerif-Medium"
             case .mediumItalic: "SEBSansSerif-MediumItalic"
-            case .regular: "SEBSansSerif"
+            case .regular: "SEBSansSerif-Regular"
             }
         }
     }
