@@ -102,8 +102,8 @@ public struct GdsColor: RawRepresentable, Sendable {
     public static let stateBrand04 = GdsColor(rawValue: "stateBrand04")
     public static let stateBrand05 = GdsColor(rawValue: "stateBrand05")
     public static let stateBrand06 = GdsColor(rawValue: "stateBrand06")
-    public static let stateBrand0202 = GdsColor(rawValue: "stateBrand0202")
-    public static let stateBrand0203 = GdsColor(rawValue: "stateBrand0203")
+    public static let stateBrand022 = GdsColor(rawValue: "stateBrand022")
+    public static let stateBrand023 = GdsColor(rawValue: "stateBrand023")
     public static let statePositive01 = GdsColor(rawValue: "statePositive01")
     public static let statePositive02 = GdsColor(rawValue: "statePositive02")
     public static let statePositive03 = GdsColor(rawValue: "statePositive03")
@@ -307,10 +307,10 @@ public extension Color {
     static var stateBrand05: Color { .gds(.stateBrand05) }
     @available(*, deprecated, message: "Use .gds(.stateBrand06) instead")
     static var stateBrand06: Color { .gds(.stateBrand06) }
-    @available(*, deprecated, message: "Use .gds(.stateBrand0202) instead")
-    static var stateBrand0202: Color { .gds(.stateBrand0202) }
-    @available(*, deprecated, message: "Use .gds(.stateBrand0203) instead")
-    static var stateBrand0203: Color { .gds(.stateBrand0203) }
+    @available(*, deprecated, message: "Use .gds(.stateBrand022) instead")
+    static var stateBrand022: Color { .gds(.stateBrand022) }
+    @available(*, deprecated, message: "Use .gds(.stateBrand023) instead")
+    static var stateBrand023: Color { .gds(.stateBrand023) }
     @available(*, deprecated, message: "Use .gds(.statePositive01) instead")
     static var statePositive01: Color { .gds(.statePositive01) }
     @available(*, deprecated, message: "Use .gds(.statePositive02) instead")
@@ -538,10 +538,10 @@ public extension UIColor {
     static var stateBrand05: UIColor { .gds(.stateBrand05) }
     @available(*, deprecated, message: "Use .gds(.stateBrand06) instead")
     static var stateBrand06: UIColor { .gds(.stateBrand06) }
-    @available(*, deprecated, message: "Use .gds(.stateBrand0202) instead")
-    static var stateBrand0202: UIColor { .gds(.stateBrand0202) }
-    @available(*, deprecated, message: "Use .gds(.stateBrand0203) instead")
-    static var stateBrand0203: UIColor { .gds(.stateBrand0203) }
+    @available(*, deprecated, message: "Use .gds(.stateBrand022) instead")
+    static var stateBrand022: UIColor { .gds(.stateBrand022) }
+    @available(*, deprecated, message: "Use .gds(.stateBrand023) instead")
+    static var stateBrand023: UIColor { .gds(.stateBrand023) }
     @available(*, deprecated, message: "Use .gds(.statePositive01) instead")
     static var statePositive01: UIColor { .gds(.statePositive01) }
     @available(*, deprecated, message: "Use .gds(.statePositive02) instead")
